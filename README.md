@@ -79,7 +79,9 @@ SonarQube'un ana özellikleri şunlar olabilir:
 Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleyebilir, hataları erken aşamalarda yakalayabilir ve yazılım projelerini daha sağlam, güvenli ve sürdürülebilir hale getirebilir.
 
 
+## Let's begin the installation of SonarQube's Community Edition version on our operating system.
 
+## İşletim sistemimize SonarQube'ın Community Edition sürümünü kurmaya başlayalım. 
 
 
 
