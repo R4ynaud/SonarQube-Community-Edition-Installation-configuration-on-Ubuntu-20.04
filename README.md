@@ -1,4 +1,9 @@
 # SonarQube-Community-Edition-Installation---configuration-on-Ubuntu-20.04
-SonarQube-Community-Edition-Installation-&amp;-configuration-on-Ubuntu-20.04
 
-8/10/2023 
+
+SonarQube Community Edition Installation & Configuration On Ubuntu-20.04
+
+
+
+
+
