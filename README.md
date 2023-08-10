@@ -108,14 +108,26 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 ```
 
 
+### 1-) Please execute the following code for Java installation.
 
 
+### 1-) Java kurulumu için aşağıdaki kodu çalıştırın.
 
 
+• For the root user ;
+```
+ apt install openjdk-11-jdk
+```
+• For the other user ;
+```
+ sudo apt install openjdk-11-jdk
+```
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/62e84804-1e8e-4efc-8189-79c0269707df)
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/ec073f71-f837-4bbf-8b01-44cc7375b2ea)
 
 
 
