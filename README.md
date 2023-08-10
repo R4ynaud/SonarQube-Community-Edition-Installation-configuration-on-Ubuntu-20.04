@@ -84,9 +84,28 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 ## İşletim sistemimize SonarQube'ın Community Edition sürümünü kurmaya başlayalım. 
 
 
+### 1-) Kurulumdan önce işletim sistemimizin paketlerini güncellemek için aşağıdaki komutları çalıştırıyoruz.
 
 
+### 1-) We run the following commands to update our operating system's packages before installation.
 
+
+• For the root user ;
+```
+ apt-get update 
+```
+• For the other user ;
+```
+ sudo apt-get update
+```
+• For the root user ;
+```
+ apt-get upgrade
+```
+• For the other user ;
+```
+ sudo apt-get upgrade
+```
 
 
 
