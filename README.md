@@ -246,8 +246,8 @@ After=network.target network-online.target
 Type=simple
 User=sonarqube
 Group=sonarqube
-ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
-ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+ExecStart=/opt/sonarqube/sonarqube-10.1.0.73491/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube/sonarqube-10.1.0.73491/bin/linux-x86-64/sonar.sh stop
 LimitNOFILE=65536
 LimitNPROC=4096
 TimeoutStartSec=5
@@ -256,10 +256,12 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 
+
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/9b8b8173-de77-464c-a80a-0298f5c5d2ac)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/294d2753-2685-47c9-b89f-f8c5362ad95c)
+
 
 
 ```
