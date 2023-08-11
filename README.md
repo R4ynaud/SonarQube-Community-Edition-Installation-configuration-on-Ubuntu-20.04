@@ -260,7 +260,8 @@ WantedBy=multi-user.target
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/294d2753-2685-47c9-b89f-f8c5362ad95c)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d9063d1a-7a64-4c2b-bf32-bb9ea063e9e6)
+
 
 
 
