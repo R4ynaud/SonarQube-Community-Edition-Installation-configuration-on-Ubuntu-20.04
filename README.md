@@ -267,6 +267,36 @@ wq!
 ```
 
 
+### 8-) Let's enable and start the services.
+
+
+### 8-) Servisi etkinleştirip ve başlatalım.
+
+
+• For the root user ;
+```
+ systemctl enable sonarqube
+```
+```
+ systemctl start sonarqube
+```
+• For the other user ;
+```
+ sudo systemctl enable sonarqube
+```
+```
+ sudo systemctl start sonarqube
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
