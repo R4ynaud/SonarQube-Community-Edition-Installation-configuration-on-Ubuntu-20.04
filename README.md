@@ -172,7 +172,36 @@ mkdir opt/sonarqube
 ```
 
 
-### 5-) 
+### 5-) Move the 'sonarqube-10.1.0.73491' folder to the 'sonarqube' folder that we created.
+
+
+### 5-) 'sonarqube-10.1.0.73491' klasörünü oluşturduğumuz 'sonarqube' klasörüne taşıyın.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/e842a41a-72fc-416d-8c43-3d6f0b2bb345)
+
+
+• For the root user ;
+```
+ mv sonarqube-10.1.0.73491 /opt/sonarqube
+```
+• For the other user ;
+```
+ sudo mv sonarqube-10.1.0.73491 /opt/sonarqube
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d1f81040-56a5-4128-8457-b3691aadc783)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/c3e8d5d7-e1da-4063-8628-02d98a30610e)
+
+
+
+
+
+
+
 
 
 
