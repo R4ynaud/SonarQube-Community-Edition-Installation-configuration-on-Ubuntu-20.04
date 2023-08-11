@@ -328,14 +328,45 @@ mkdir opt/SonarQube
  adduser --system --no-create-home --group sonarqube
 ```
 ```
- chown -R sonarqube:sonarqube /opt/sonarqube
+ chown -R sonarqube:sonarqube /opt/SonarQube
 ```
 • For the other user ;
 ```
  sudo adduser --system --no-create-home --group sonarqube
 ```
 ```
- sudo chown -R sonarqube:sonarqube /opt/sonarqube
+ sudo chown -R sonarqube:sonarqube /opt/SonarQube
+```
+
+
+• Plugin ; 
+
+```
+ cd /opt/SonarQube/sonarqube-9.8.0.63668/extensions/plugins
+```
+```
+ wget https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/1.14.0/sonarqube-community-branch-plugin-1.14.0.jar
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/0141f9ec-1cc1-4963-a803-2442710d4769)
+
+
+• SonarQube configuration ; 
+
+
+```
+vim opt/SonarQube/sonarqube-9.8.0.63668/conf/sonar.properties
+```
+
+
+```
+sonar.jdbc.username=sonarqube
+sonar.jdbc.password=Son4r23+
+sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
+
+sonar.web.javaAdditionalOpts=-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=web
+sonar.ce.javaAdditionalOpts=-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=ce
 ```
 
 
