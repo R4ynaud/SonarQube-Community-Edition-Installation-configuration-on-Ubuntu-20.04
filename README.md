@@ -425,9 +425,7 @@ WantedBy=multi-user.target
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d9063d1a-7a64-4c2b-bf32-bb9ea063e9e6)
-
-
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/476005c8-6353-48c9-af1d-3c8889e0ab7b)
 
 
 ```
@@ -467,16 +465,6 @@ wq!
 
 
 
-
-
-
-
-
-
-
-
-
-
 ### 9-) Let's enable and start the services.
 
 
@@ -499,13 +487,14 @@ wq!
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8e4dc6e2-6212-438c-8977-246ca527d4c7)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/a4ff04f3-e985-4989-8ec4-a85eabe43a09)
 
 
-### 9-)
 
 
-### 9-)
+
+
+
 
 
 
