@@ -259,6 +259,13 @@ WantedBy=multi-user.target
 ```
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/9b8b8173-de77-464c-a80a-0298f5c5d2ac)
+
+
+```
+wq!
+```
+
 
 
 
