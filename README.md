@@ -262,14 +262,14 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
 
 
 ```
- wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.1.0.73491.zip
+ wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.8.0.63668.zip
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/abcf4a0d-f2b5-40dd-aeb2-c104bd846384)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/00f2454b-1c14-40df-9fa9-34cee09f5ec3)
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/26b9e670-4d4f-42ea-860a-c8f0ca67e07b)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/f5242279-4970-45bb-b51a-1379ee175309)
 
 
 ### 3-) Extract the downloaded file from the zip archive.
@@ -279,11 +279,12 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
 
 
 ```
-unzip sonarqube-10.1.0.73491.zip
+unzip sonarqube-9.8.0.63668.zip
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/e7112e93-842f-43b6-a969-fc0c339604d2)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/80d56c99-638f-447a-a2a7-8887957d5736)
+
 
 
 ### 4-) Let's create a new folder named 'sonarqube' under the '/opt' directory.
@@ -293,34 +294,27 @@ unzip sonarqube-10.1.0.73491.zip
 
 
 ```
-mkdir opt/sonarqube
+mkdir opt/SonarQube
 ```
 
 
-### 5-) Move the 'sonarqube-10.1.0.73491' folder to the 'sonarqube' folder that we created.
+### 5-) Move the 'sonarqube-9.8.0.63668' folder to the 'SonarQube' folder that we created.
 
 
-### 5-) 'sonarqube-10.1.0.73491' klasörünü oluşturduğumuz 'sonarqube' klasörüne taşıyın.
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/e842a41a-72fc-416d-8c43-3d6f0b2bb345)
+### 5-) 'sonarqube-9.8.0.63668' klasörünü oluşturduğumuz 'SonarQube' klasörüne taşıyın.
 
 
 • For the root user ;
 ```
- mv sonarqube-10.1.0.73491 /opt/sonarqube
+ mv sonarqube-9.8.0.63668 /opt/SonarQube
 ```
 • For the other user ;
 ```
- sudo mv sonarqube-10.1.0.73491 /opt/sonarqube
+ sudo mv sonarqube-9.8.0.63668 /opt/SonarQube
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d1f81040-56a5-4128-8457-b3691aadc783)
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/c3e8d5d7-e1da-4063-8628-02d98a30610e)
-
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/94c3fc1f-3a57-4904-b12a-a08d38023370)
 
 
 ### 6-) Let's create a user for SonarQube.
