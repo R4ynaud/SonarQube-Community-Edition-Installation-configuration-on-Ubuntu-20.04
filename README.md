@@ -389,21 +389,36 @@ sonar.ce.javaAdditionalOpts=-javaagent:/opt/sonarqube/extensions/plugins/sonarqu
 ```
 
 [Unit]
+
 Description=SonarQube service
-After=network.target network-online.target
+
+After=syslog.target network.target
+
 
 [Service]
-Type=simple
+
+Type=forking
+
+
+ExecStart=/opt/SonarQube/sonarqube-9.8.0.63668/bin/linux-x86-64/sonar.sh start
+
+ExecStop=/opt/SonarQube/sonarqube-9.8.0.63668/bin/linux-x86-64/sonar.sh stop
+
+
 User=sonarqube
+
 Group=sonarqube
-ExecStart=/opt/sonarqube/sonarqube-10.1.0.73491/bin/linux-x86-64/sonar.sh start
-ExecStop=/opt/sonarqube/sonarqube-10.1.0.73491/bin/linux-x86-64/sonar.sh stop
-LimitNOFILE=65536
-LimitNPROC=4096
-TimeoutStartSec=5
+
 Restart=always
 
+
+LimitNOFILE=65536
+
+LimitNPROC=4096
+
+
 [Install]
+
 WantedBy=multi-user.target
 
 
