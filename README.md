@@ -161,6 +161,25 @@ unzip sonarqube-10.1.0.73491.zip
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/e7112e93-842f-43b6-a969-fc0c339604d2)
 
 
+### 4-) Let's create a new folder named 'sonarqube' under the '/opt' directory.
+
+
+### 4-) '/opt' dizini altında 'sonarqube' adında yeni bir klasör oluşturalım.
+
+
+```
+mkdir opt/sonarqube
+```
+
+
+### 5-) 
+
+
+
+
+
+
+
 
 
 
