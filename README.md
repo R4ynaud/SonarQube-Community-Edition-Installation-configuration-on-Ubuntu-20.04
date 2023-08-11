@@ -108,10 +108,10 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 ```
 
 
-### 1-) Please execute the following code for Java installation.
+### 1-) Please execute the following command for Java installation.
 
 
-### 1-) Java kurulumu için aşağıdaki kodu çalıştırın.
+### 1-) Java kurulumu için aşağıdaki komutu çalıştırın.
 
 
 • For the root user ;
@@ -129,6 +129,19 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/ec073f71-f837-4bbf-8b01-44cc7375b2ea)
 
+
+### 2-) Run the following command to download the latest version of SonarQube.
+
+
+### 2-) SonarQube'un en son sürümünü indirmek için aşağıdaki komutu çalıştırın.
+
+
+```
+ wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.1.0.73491.zip
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/abcf4a0d-f2b5-40dd-aeb2-c104bd846384)
 
 
 
