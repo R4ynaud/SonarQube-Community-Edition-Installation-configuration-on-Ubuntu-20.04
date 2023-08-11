@@ -113,6 +113,35 @@ passwd postgres
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8272efe1-694b-4946-848c-691843d64db9)
 
 
+```
+sudo passwd postgres
+```
+```
+su - postgres
+```
+```
+createuser sonarqube
+```
+```
+psql
+```
+```
+ALTER USER sonarqube WITH ENCRYPTED password 'Son4r23+';
+```
+```
+CREATE DATABASE sonarqube OWNER sonarqube;
+```
+```
+GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
+```
+```
+\q
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/b784a602-1fa9-4935-8af8-cdaa105fdb8e)
+
+
 • For the other user ;
 ```
 sudo apt update -y
@@ -136,12 +165,42 @@ sudo systemctl start postgresql
 sudo systemctl status postgresql
 ```
 ```
-passwd postgres
+sudo  passwd postgres
 ```
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8272efe1-694b-4946-848c-691843d64db9)
 
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d9b9f933-6539-4465-994c-f9baf8a2f0b5)
+
+
+```
+sudo passwd postgres
+```
+```
+su - postgres
+```
+```
+createuser sonarqube
+```
+```
+psql
+```
+```
+ALTER USER sonarqube WITH ENCRYPTED password 'Son4r23+';
+```
+```
+CREATE DATABASE sonarqube OWNER sonarqube;
+```
+```
+GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
+```
+```
+\q
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/b784a602-1fa9-4935-8af8-cdaa105fdb8e)
+
 
 
 ## Let's begin the installation of SonarQube's Community Edition version on our operating system.
