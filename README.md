@@ -198,11 +198,26 @@ mkdir opt/sonarqube
 
 
 
+### 6-) Let's create a user for SonarQube.
 
 
+### 6-) SonarQube için bir kullanıcı oluşturalım.
 
 
-
+• For the root user ;
+```
+ adduser --system --no-create-home --group sonarqube
+```
+```
+ chown -R sonarqube:sonarqube /opt/sonarqube
+```
+• For the other user ;
+```
+ sudo adduser --system --no-create-home --group sonarqube
+```
+```
+ sudo chown -R sonarqube:sonarqube /opt/sonarqube
+```
 
 
 
