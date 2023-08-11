@@ -107,6 +107,12 @@ systemctl start postgresql
 ```
 systemctl status postgresql
 ```
+```
+passwd postgres
+```
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8272efe1-694b-4946-848c-691843d64db9)
+
+
 • For the other user ;
 ```
 sudo apt update -y
@@ -129,6 +135,10 @@ sudo systemctl start postgresql
 ```
 sudo systemctl status postgresql
 ```
+```
+passwd postgres
+```
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8272efe1-694b-4946-848c-691843d64db9)
 
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d9b9f933-6539-4465-994c-f9baf8a2f0b5)
