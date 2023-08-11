@@ -144,5 +144,30 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/abcf4a0d-f2b5-40dd-aeb2-c104bd846384)
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/26b9e670-4d4f-42ea-860a-c8f0ca67e07b)
+
+
+### 3-) Extract the downloaded file from the zip archive.
+
+
+### 3-) İndirilen dosyayı zip arşivinden çıkarın. 
+
+
+```
+unzip sonarqube-10.1.0.73491.zip
+
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/e7112e93-842f-43b6-a969-fc0c339604d2)
+
+
+
+
+
+
+
+
+
 
 
