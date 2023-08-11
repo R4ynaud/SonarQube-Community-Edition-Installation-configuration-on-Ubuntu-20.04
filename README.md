@@ -267,10 +267,51 @@ wq!
 ```
 
 
-### 8-) Let's enable and start the services.
+### 8-) Let's grant the necessary permissions through the firewall.
 
 
-### 8-) Servisi etkinleştirip ve başlatalım.
+### 8-) Güvenlik duvarı üzerinden gerekli izinleri verelim.
+
+
+• For the root user ;
+```
+ ufw allow http
+```
+```
+ ufw allow https
+```
+```
+ ufw allow 9000
+```
+• For the other user ;
+```
+ sudo ufw allow http
+```
+```
+ sudo ufw allow https
+```
+```
+ sudo ufw allow 9000
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 9-) Let's enable and start the services.
+
+
+### 9-) Servisi etkinleştirip ve başlatalım.
 
 
 • For the root user ;
@@ -289,10 +330,13 @@ wq!
 ```
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8e4dc6e2-6212-438c-8977-246ca527d4c7)
 
 
+### 9-)
 
 
+### 9-)
 
 
 
