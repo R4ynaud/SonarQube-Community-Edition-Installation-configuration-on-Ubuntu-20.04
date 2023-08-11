@@ -114,7 +114,7 @@ passwd postgres
 
 
 ```
-sudo passwd postgres
+passwd postgres
 ```
 ```
 su - postgres
