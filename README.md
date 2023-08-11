@@ -243,11 +243,22 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
 ```
  apt install openjdk-11-jdk
 ```
+```
+ vim /etc/environment
+```
+```
+ JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+```
 • For the other user ;
 ```
  sudo apt install openjdk-11-jdk
 ```
-
+```
+ sudo vim /etc/environment
+```
+```
+ JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+```
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/62e84804-1e8e-4efc-8189-79c0269707df)
 
