@@ -155,7 +155,6 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 
 ```
 unzip sonarqube-10.1.0.73491.zip
-
 ```
 
 
