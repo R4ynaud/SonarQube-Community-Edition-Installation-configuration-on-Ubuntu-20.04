@@ -220,9 +220,43 @@ mkdir opt/sonarqube
 ```
 
 
+### 7-) Create a systemd service file to run SonarQube as a system service.
 
 
+### 7-) SonarQube'u sistem servisi olarak çalıştırmak için bir systemd servisi dosyası oluşturalım.
 
+
+• For the root user ;
+```
+ vim /etc/systemd/system/sonarqube.service
+```
+• For the other user ;
+```
+ sudo vim /etc/systemd/system/sonarqube.service
+```
+
+
+```
+
+[Unit]
+Description=SonarQube service
+After=network.target network-online.target
+
+[Service]
+Type=simple
+User=sonarqube
+Group=sonarqube
+ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+LimitNOFILE=65536
+LimitNPROC=4096
+TimeoutStartSec=5
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+```
 
 
 
