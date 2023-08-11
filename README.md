@@ -79,7 +79,63 @@ SonarQube'un ana özellikleri şunlar olabilir:
 Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleyebilir, hataları erken aşamalarda yakalayabilir ve yazılım projelerini daha sağlam, güvenli ve sürdürülebilir hale getirebilir.
 
 
+## SonarQube kurulumuna geçmeden önce PostgreSQL veritabanını kurmamız gerekiyor,  PostgreSQL veritabanını kurmak için aşağıdaki komutları sırayla çalıştırın.
+
+
+## Before proceeding with the SonarQube installation, we need to install the PostgreSQL database. To install the PostgreSQL database, execute the following commands in sequence.
+
+
+• For the root user ;
+```
+apt update -y
+```
+```
+sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+```
+```
+wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+```
+```
+apt install postgresql postgresql-contrib -y
+```
+```
+systemctl enable postgresql
+```
+```
+systemctl start postgresql
+```
+```
+systemctl status postgresql
+```
+• For the other user ;
+```
+sudo apt update -y
+```
+```
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+```
+```
+wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+```
+```
+sudo apt install postgresql postgresql-contrib -y
+```
+```
+sudo systemctl enable postgresql
+```
+```
+sudo systemctl start postgresql
+```
+```
+sudo systemctl status postgresql
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d9b9f933-6539-4465-994c-f9baf8a2f0b5)
+
+
 ## Let's begin the installation of SonarQube's Community Edition version on our operating system.
+
 
 ## İşletim sistemimize SonarQube'ın Community Edition sürümünü kurmaya başlayalım. 
 
