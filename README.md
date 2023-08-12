@@ -127,7 +127,7 @@ vim /etc/security/limits.conf
 
 • For the root user ;
 ```
-apt update -y
+apt-get update -y
 ```
 ```
 sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
@@ -136,7 +136,7 @@ sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
 ```
 ```
-apt install postgresql postgresql-contrib -y
+apt-get install postgresql postgresql-contrib -y
 ```
 ```
 systemctl enable postgresql
@@ -184,7 +184,7 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
 
 • For the other user ;
 ```
-sudo apt update -y
+sudo apt-get update -y
 ```
 ```
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
@@ -193,7 +193,7 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
 ```
 ```
-sudo apt install postgresql postgresql-contrib -y
+sudo apt-get install postgresql postgresql-contrib -y
 ```
 ```
 sudo systemctl enable postgresql
