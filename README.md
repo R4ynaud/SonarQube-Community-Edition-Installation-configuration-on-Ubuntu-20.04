@@ -391,50 +391,38 @@ vim /opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh
 ```
 • For the other user ;
 ```
- sudo vim /etc/systemd/system/sonarqube.service
+ sudo vim /etc/systemd/system/sonar.service
 ```
 
 
 ```
 
 [Unit]
-
 Description=SonarQube service
-
 After=syslog.target network.target
 
-
 [Service]
-
 Type=forking
 
+ExecStart=/opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh stop
 
-ExecStart=/opt/SonarQube/sonarqube-9.8.0.63668/bin/linux-x86-64/sonar.sh start
-
-ExecStop=/opt/SonarQube/sonarqube-9.8.0.63668/bin/linux-x86-64/sonar.sh stop
-
-
-User=sonarqube
-
-Group=sonarqube
-
+User=sonar
+Group=sonar
 Restart=always
 
-
 LimitNOFILE=65536
-
 LimitNPROC=4096
 
-
 [Install]
-
 WantedBy=multi-user.target
 
 
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/476005c8-6353-48c9-af1d-3c8889e0ab7b)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/48386658-158c-4f61-a129-368785854d97)
+
 
 
 ```
