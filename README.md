@@ -91,16 +91,10 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8b1f0639-d36f-499e-aa4b-05279f212203)
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/70498178-4ea0-49c7-9d08-36c4d5c83982)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/7e56de0b-9e88-4bef-8bd0-cee061922404)
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/0c1ad18c-8d9f-43a9-b205-5f2779734a82)
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/56b75130-eb5f-4f27-a742-c0ff00493e96)
-
-
-
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/c44fac73-b328-4b4f-9127-1cdf27e403a6)
 
 
 ## SonarQube kurulumuna geçmeden önce PostgreSQL veritabanını kurmamız gerekiyor,  PostgreSQL veritabanını kurmak için aşağıdaki komutları sırayla çalıştırın.
