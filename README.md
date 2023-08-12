@@ -353,9 +353,6 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/0141f9ec-1cc1-4963-a803-2442710d4769)
-
-
 • SonarQube configuration ; 
 
 
