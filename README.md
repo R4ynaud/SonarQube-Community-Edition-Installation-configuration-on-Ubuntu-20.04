@@ -79,6 +79,30 @@ SonarQube'un ana özellikleri şunlar olabilir:
 Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleyebilir, hataları erken aşamalarda yakalayabilir ve yazılım projelerini daha sağlam, güvenli ve sürdürülebilir hale getirebilir.
 
 
+## First, let's download the "SonarQube Community Edition" version from the address https://www.sonarsource.com/.
+
+
+## Öncelikle https://www.sonarsource.com/ adresinden 'SonarQube Community Edition' sürümünü indirelim.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/0e5a70c5-4c6a-43fa-8622-b1abe3861f86)
+ 
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8b1f0639-d36f-499e-aa4b-05279f212203)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/70498178-4ea0-49c7-9d08-36c4d5c83982)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/0c1ad18c-8d9f-43a9-b205-5f2779734a82)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/56b75130-eb5f-4f27-a742-c0ff00493e96)
+
+
+
+
+
 ## SonarQube kurulumuna geçmeden önce PostgreSQL veritabanını kurmamız gerekiyor,  PostgreSQL veritabanını kurmak için aşağıdaki komutları sırayla çalıştırın.
 
 
