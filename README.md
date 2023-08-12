@@ -287,6 +287,12 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
  apt-get install openjdk-17-jre -y
 ```
 ```
+ update-alternatives --config java
+```
+```
+ 1
+```
+```
  vim /etc/environment
 ```
 ```
@@ -300,7 +306,10 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
  sudo apt-get install openjdk-17-jre -y
 ```
 ```
- sudo apt install openjdk-11-jdk
+ sudo update-alternatives --config java
+```
+```
+ 1
 ```
 ```
  sudo vim /etc/environment
