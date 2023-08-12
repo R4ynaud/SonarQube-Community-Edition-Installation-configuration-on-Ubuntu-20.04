@@ -152,10 +152,6 @@ passwd postgres
 ```
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8272efe1-694b-4946-848c-691843d64db9)
 
-
-```
-passwd postgres
-```
 ```
 su - postgres
 ```
