@@ -281,7 +281,10 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
 
 • For the root user ;
 ```
- apt install openjdk-11-jdk
+ apt-get install openjdk-17-jdk -y
+```
+```
+ apt-get install openjdk-17-jre -y
 ```
 ```
  vim /etc/environment
@@ -290,6 +293,12 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
  JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 ```
 • For the other user ;
+```
+ sudo apt-get install openjdk-17-jdk -y
+```
+```
+ sudo apt-get install openjdk-17-jre -y
+```
 ```
  sudo apt install openjdk-11-jdk
 ```
