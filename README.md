@@ -79,22 +79,20 @@ SonarQube'un ana özellikleri şunlar olabilir:
 Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleyebilir, hataları erken aşamalarda yakalayabilir ve yazılım projelerini daha sağlam, güvenli ve sürdürülebilir hale getirebilir.
 
 
-## First, let's download the "SonarQube Community Edition" version from the address https://www.sonarsource.com/.
+## First, let's download the "SonarQube Community Edition" version.
 
 
-## Öncelikle https://www.sonarsource.com/ adresinden 'SonarQube Community Edition' sürümünü indirelim.
+## Öncelikle 'SonarQube Community Edition' sürümünü indirelim.
 
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/0e5a70c5-4c6a-43fa-8622-b1abe3861f86)
- 
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8b1f0639-d36f-499e-aa4b-05279f212203)
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/7e56de0b-9e88-4bef-8bd0-cee061922404)
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/c44fac73-b328-4b4f-9127-1cdf27e403a6)
+```
+cd /opt
+```
+```
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
+```
+```
+unzip sonarqube/sonarqube-9.9.0.65466.zip
+```
 
 
 ## SonarQube kurulumuna geçmeden önce PostgreSQL veritabanını kurmamız gerekiyor,  PostgreSQL veritabanını kurmak için aşağıdaki komutları sırayla çalıştırın.
@@ -328,20 +326,20 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
  groupadd sonar
 ```
 ```
- useradd -c "user to run SonarQube" -d /opt/sonarqube-9.9.1.69595 -g sonar sonar
+ useradd -c "user to run SonarQube" -d /opt/sonarqube-9.9.0.65466 -g sonar sonar
 ```
 ```
- chown sonar:sonar /opt/sonarqube-9.9.1.69595 -R
+ chown sonar:sonar /opt/sonarqube-9.9.0.65466 -R
 ```
 • For the other user ;
 ```
  sudo groupadd sonar
 ```
 ```
- sudo useradd -c "user to run SonarQube" -d /opt/sonarqube-9.9.1.69595 -g sonar sonar
+ sudo useradd -c "user to run SonarQube" -d /sonarqube-9.9.0.65466 -g sonar sonar
 ```
 ```
- sudo chown sonar:sonar /opt/sonarqube-9.9.1.69595 -R
+ sudo chown sonar:sonar /opt/sonarqube-9.9.0.65466 -R
 ```
 
 
@@ -362,18 +360,23 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 
 
 ```
-vim opt/SonarQube/sonarqube-9.8.0.63668/conf/sonar.properties
+vim /opt/sonarqube-9.9.0.65466/conf/sonar.properties
 ```
 
 
 ```
-sonar.jdbc.username=sonarqube
-sonar.jdbc.password=Son4r23+
+sonar.jdbc.username=sonar
+sonar.jdbc.password=sonar
 sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
-
-sonar.web.javaAdditionalOpts=-javaagent:/opt/SonarQube/sonarqube-9.8.0.63668/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=web
-sonar.ce.javaAdditionalOpts=-javaagent:/opt/SonarQube/sonarqube-9.8.0.63668/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=ce
 ```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/de4c3cfc-eb54-46e8-a17d-cf69b2e6e7c6)
+
+
+```
+vim /opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh
+```
+
 
 
 ### 7-) Create a systemd service file to run SonarQube as a system service.
