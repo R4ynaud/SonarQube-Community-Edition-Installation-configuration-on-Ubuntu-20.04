@@ -376,8 +376,8 @@ sonar.jdbc.username=sonarqube
 sonar.jdbc.password=Son4r23+
 sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
 
-sonar.web.javaAdditionalOpts=-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=web
-sonar.ce.javaAdditionalOpts=-javaagent:/opt/sonarqube/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=ce
+sonar.web.javaAdditionalOpts=-javaagent:/opt/SonarQube/sonarqube-9.8.0.63668/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=web
+sonar.ce.javaAdditionalOpts=-javaagent:/opt/SonarQube/sonarqube-9.8.0.63668/extensions/plugins/sonarqube-community-branch-plugin-1.14.0.jar=ce
 ```
 
 
