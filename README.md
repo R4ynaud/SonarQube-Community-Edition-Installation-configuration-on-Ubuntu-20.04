@@ -333,17 +333,23 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 
 • For the root user ;
 ```
- adduser --system --no-create-home --group sonarqube
+ groupadd sonar
 ```
 ```
- chown -R sonarqube:sonarqube /opt/SonarQube
+ useradd -c "user to run SonarQube" -d /opt/sonarqube-9.9.1.69595 -g sonar sonar
+```
+```
+ chown sonar:sonar /opt/sonarqube-9.9.1.69595 -R
 ```
 • For the other user ;
 ```
- sudo adduser --system --no-create-home --group sonarqube
+ sudo groupadd sonar
 ```
 ```
- sudo chown -R sonarqube:sonarqube /opt/SonarQube
+ sudo useradd -c "user to run SonarQube" -d /opt/sonarqube-9.9.1.69595 -g sonar sonar
+```
+```
+ sudo chown sonar:sonar /opt/sonarqube-9.9.1.69595 -R
 ```
 
 
