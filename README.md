@@ -324,72 +324,11 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/ec073f71-f837-4bbf-8b01-44cc7375b2ea)
 
 
-### 2-) Run the following command to download the latest version of SonarQube.
+
+### 2-) Let's create a user for SonarQube.
 
 
-### 2-) SonarQube'un en son sürümünü indirmek için aşağıdaki komutu çalıştırın.
-
-
-```
- wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.8.0.63668.zip
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/00f2454b-1c14-40df-9fa9-34cee09f5ec3)
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/f5242279-4970-45bb-b51a-1379ee175309)
-
-
-### 3-) Extract the downloaded file from the zip archive.
-
-
-### 3-) İndirilen dosyayı zip arşivinden çıkarın. 
-
-
-```
-unzip sonarqube-9.8.0.63668.zip
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/80d56c99-638f-447a-a2a7-8887957d5736)
-
-
-
-### 4-) Let's create a new folder named 'sonarqube' under the '/opt' directory.
-
-
-### 4-) '/opt' dizini altında 'sonarqube' adında yeni bir klasör oluşturalım.
-
-
-```
-mkdir opt/SonarQube
-```
-
-
-### 5-) Move the 'sonarqube-9.8.0.63668' folder to the 'SonarQube' folder that we created.
-
-
-### 5-) 'sonarqube-9.8.0.63668' klasörünü oluşturduğumuz 'SonarQube' klasörüne taşıyın.
-
-
-• For the root user ;
-```
- mv sonarqube-9.8.0.63668 /opt/SonarQube
-```
-• For the other user ;
-```
- sudo mv sonarqube-9.8.0.63668 /opt/SonarQube
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/94c3fc1f-3a57-4904-b12a-a08d38023370)
-
-
-### 6-) Let's create a user for SonarQube.
-
-
-### 6-) SonarQube için bir kullanıcı oluşturalım.
+### 2-) SonarQube için bir kullanıcı oluşturalım.
 
 
 • For the root user ;
