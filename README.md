@@ -102,6 +102,28 @@ Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleye
 
 ## Before proceeding with the SonarQube installation, we need to install the PostgreSQL database. To install the PostgreSQL database, execute the following commands in sequence.
 
+```
+sysctl -w vm.max_map_count=262144
+```
+```
+sysctl -w fs.file-max=65536
+```
+```
+ulimit -n 65536
+```
+```
+ulimit -u 4096
+```
+```
+vim /etc/security/limits.conf
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/5c4cf2b7-acd2-4ca9-9a88-b64c36985ade)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/7708f02a-5e5c-41d0-847a-6e05d2892536)
+
 
 • For the root user ;
 ```
