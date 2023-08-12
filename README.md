@@ -160,19 +160,19 @@ passwd postgres
 su - postgres
 ```
 ```
-create user sonarqube
+create user sonar
 ```
 ```
 psql
 ```
 ```
-ALTER USER sonarqube WITH ENCRYPTED password 'Son4r23+';
+ALTER USER sonar WITH ENCRYPTED password 'sonar';
 ```
 ```
-CREATE DATABASE sonarqube OWNER sonarqube;
+CREATE DATABASE sonarqube OWNER sonar;
 ```
 ```
-GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
+GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 ```
 ```
 \q
@@ -226,13 +226,13 @@ create user sonarqube
 psql
 ```
 ```
-ALTER USER sonarqube WITH ENCRYPTED password 'Son4r23+';
+ALTER USER sonar WITH ENCRYPTED password 'sonar';
 ```
 ```
-CREATE DATABASE sonarqube OWNER sonarqube;
+CREATE DATABASE sonarqube OWNER sonar;
 ```
 ```
-GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
+GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 ```
 ```
 \q
