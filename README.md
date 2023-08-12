@@ -346,7 +346,7 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 • Plugin ; 
 
 ```
- cd /opt/SonarQube/sonarqube-9.8.0.63668/extensions/plugins
+ cd /opt/sonarqube-9.9.0.65466/extensions/plugins
 ```
 ```
  wget https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/1.14.0/sonarqube-community-branch-plugin-1.14.0.jar
@@ -470,17 +470,17 @@ wq!
 
 • For the root user ;
 ```
- systemctl enable sonarqube
+ systemctl enable sonar
 ```
 ```
- systemctl start sonarqube
+ systemctl start sonar
 ```
 • For the other user ;
 ```
- sudo systemctl enable sonarqube
+ sudo systemctl enable sonar
 ```
 ```
- sudo systemctl start sonarqube
+ sudo systemctl start sonar
 ```
 
 
