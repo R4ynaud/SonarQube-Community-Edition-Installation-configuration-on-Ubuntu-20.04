@@ -263,10 +263,10 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 ```
 
 
-### 1-) Please execute the following command for Java installation.
+### 2-) Please execute the following command for Java installation.
 
 
-### 1-) Java kurulumu için aşağıdaki komutu çalıştırın.
+### 2-) Java kurulumu için aşağıdaki komutu çalıştırın.
 
 
 • For the root user ;
@@ -315,10 +315,10 @@ GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
 
 
 
-### 2-) Let's create a user for SonarQube.
+### 3-) Let's create a user for SonarQube.
 
 
-### 2-) SonarQube için bir kullanıcı oluşturalım.
+### 3-) SonarQube için bir kullanıcı oluşturalım.
 
 
 • For the root user ;
@@ -379,10 +379,10 @@ vim /opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh
 
 
 
-### 7-) Create a systemd service file to run SonarQube as a system service.
+### 4-) Create a systemd service file to run SonarQube as a system service.
 
 
-### 7-) SonarQube'u sistem servisi olarak çalıştırmak için bir systemd servisi dosyası oluşturalım.
+### 4-) SonarQube'u sistem servisi olarak çalıştırmak için bir systemd servisi dosyası oluşturalım.
 
 
 • For the root user ;
@@ -430,10 +430,10 @@ wq!
 ```
 
 
-### 8-) Let's grant the necessary permissions through the firewall.
+### 5-) Let's grant the necessary permissions through the firewall.
 
 
-### 8-) Güvenlik duvarı üzerinden gerekli izinleri verelim.
+### 5-) Güvenlik duvarı üzerinden gerekli izinleri verelim.
 
 
 • For the root user ;
@@ -462,10 +462,10 @@ wq!
 
 
 
-### 9-) Let's enable and start the services.
+### 6-) Let's enable and start the services.
 
 
-### 9-) Servisi etkinleştirip ve başlatalım.
+### 6-) Servisi etkinleştirip ve başlatalım.
 
 
 • For the root user ;
