@@ -120,7 +120,7 @@ passwd postgres
 su - postgres
 ```
 ```
-createuser sonarqube
+create user sonarqube
 ```
 ```
 psql
@@ -180,7 +180,7 @@ sudo passwd postgres
 su - postgres
 ```
 ```
-createuser sonarqube
+create user sonarqube
 ```
 ```
 psql
