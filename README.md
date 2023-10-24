@@ -521,6 +521,7 @@ systemctl status sonar
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/ba2140e6-0f62-4a66-b3f2-c8b05e6f87a1)
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/fe8b4ba8-cedc-4817-91f8-d7d241d9381f)
 
 
 
