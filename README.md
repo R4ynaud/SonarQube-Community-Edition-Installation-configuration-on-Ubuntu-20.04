@@ -79,20 +79,31 @@ SonarQube'un ana özellikleri şunlar olabilir:
 Bu sayede geliştirme ekibi, kodun genel kalitesini ve güvenliğini gözlemleyebilir, hataları erken aşamalarda yakalayabilir ve yazılım projelerini daha sağlam, güvenli ve sürdürülebilir hale getirebilir.
 
 
-## First, let's download the "SonarQube Community Edition" version.
+## Support for MySQL has been removed in SonarQube. Please increase vm.max_map_count, file descriptors, and ulimit at runtime for the existing session.
 
 
-## Öncelikle 'SonarQube Community Edition' sürümünü indirelim.
+## SonarQube için MySQL Desteği kaldırıldı. Çalışma zamanında mevcut oturum için vm.max_map_count çekirdeğini, dosya tanımlayıcısını ve ulimit'i artırın.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/f3b705fc-40a9-403b-8215-0c5453f872ba)
+
 
 ```
-cd /opt
+sysctl -w vm.max_map_count=524288
 ```
 ```
-wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
+sysctl -w fs.file-max=131072
 ```
 ```
-unzip sonarqube/sonarqube-9.9.0.65466.zip
+ulimit -n 131072
 ```
+```
+ulimit -u 8192
+``` 
+
+
+
+
 
 
 ## SonarQube kurulumuna geçmeden önce PostgreSQL veritabanını kurmamız gerekiyor,  PostgreSQL veritabanını kurmak için aşağıdaki komutları sırayla çalıştırın.
