@@ -173,6 +173,119 @@ apt-get install openjdk-17-jre -y
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a688d78d-4318-43d4-81e5-41a9466437f6)
 
 
+## Run the following commands to install PostgreSQL 10 for SonarQube.
+
+
+## SonarQube için PostgreSQL 10'u yüklemek üzere aşağıdaki komutları çalıştırın.
+
+
+```
+sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+```
+
+```
+wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/323f2cd5-be03-474a-80df-1ff5925fba75)
+
+
+## Install the PostgreSQL database server using the following command.
+
+
+## Aşağıdaki komutu kullanarak PostgreSQL veritabanı sunucusunu kurun.
+
+
+```
+apt-get -y install postgresql postgresql-contrib
+```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/e43b1108-87c7-4558-bc02-3d5546b53ee9)
+
+
+## Start the PostgreSQL database server using the following command.
+
+
+## Aşağıdaki komutu kullanarak PostgreSQL veritabanı sunucusunu başlatın.
+
+
+```
+systemctl start postgresql
+```
+```
+systemctl enable postgresql
+```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/457b505c-6aa4-49bf-a3af-d43ac8a4948a)
+
+
+## Change the password for the default PostgreSQL user.
+
+
+## Varsayılan PostgreSQL kullanıcısının şifresini değiştirin.
+
+
+```
+passwd postgres
+```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/cc3cdf47-6b0c-4a70-a98d-0a1a56471501)
+
+
+## Switch to the postgres user.
+
+
+## Postgres kullanıcısına geçin.
+
+
+```
+su - postgres
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/29234b22-6650-4b2d-acbe-1d7d8b0b061c)
+
+
+## Create a new user by running the following commands.
+
+
+## Aşağıdaki komutları çalıştırarak yeni bir kullanıcı oluşturun.
+
+
+```
+createuser sonar
+```
+
+```
+psql
+```
+
+```
+ALTER USER sonar WITH ENCRYPTED password '1';
+```
+
+```
+CREATE DATABASE sonarqube OWNER sonar;
+```
+
+```
+grant all privileges on DATABASE sonarqube to sonar;
+```
+
+```
+\q
+```
+
+```
+exit
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/bbbc4e09-3c7c-4349-9a25-3b76b14772f9)
+
+
+
 
 
 
