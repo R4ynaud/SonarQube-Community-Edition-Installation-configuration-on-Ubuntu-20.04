@@ -151,8 +151,26 @@ apt-get install wget unzip -y
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/67ebdb4b-5855-4687-87e5-de0fcdd62f22)
 
 
+## Install OpenJDK and JRE 11 using following command. 
 
 
+## Aşağıdaki komutu kullanarak OpenJDK ve JRE 11'i yükleyin.
+
+
+```
+apt-get install openjdk-17-jdk -y
+```
+
+```
+apt-get install openjdk-17-jre -y
+```
+
+```
+ java -version
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a688d78d-4318-43d4-81e5-41a9466437f6)
 
 
 
