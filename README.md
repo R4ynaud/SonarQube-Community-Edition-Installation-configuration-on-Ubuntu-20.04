@@ -285,6 +285,43 @@ exit
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/bbbc4e09-3c7c-4349-9a25-3b76b14772f9)
 
 
+## Run the following command to download SonarQube.
+
+
+## SonarQube'u indirmek için aşağıdaki komutu çalıştırın.
+
+
+```
+cd /tmp
+```
+
+```
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/f5488de1-971c-468c-a8e5-2e4f45689cbc)
+
+
+## Run the following command to download SonarQube.
+
+
+## SonarQube'u indirmek için aşağıdaki komutu çalıştırın.
+
+
+```
+unzip sonarqube-9.9.0.65466.zip -d /opt
+```
+```
+mkdir /opt/sonarqube
+```
+```
+mv /opt/sonarqube-9.9.0.65466 /opt/sonarqube
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/eb9f8b00-9642-4095-a799-bebc55bbfb8c)
+
 
 
 
@@ -294,366 +331,6 @@ exit
 
 
 
-
-• For the root user ;
-```
-apt-get update -y
-```
-```
-sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
-```
-```
-wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
-```
-```
-apt-get install postgresql postgresql-contrib -y
-```
-```
-systemctl enable postgresql
-```
-```
-systemctl start postgresql
-```
-```
-systemctl status postgresql
-```
-```
-passwd postgres
-```
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8272efe1-694b-4946-848c-691843d64db9)
-
-```
-su - postgres
-```
-```
-create user sonar
-```
-```
-psql
-```
-```
-ALTER USER sonar WITH ENCRYPTED password 'sonar';
-```
-```
-CREATE DATABASE sonarqube OWNER sonar;
-```
-```
-GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
-```
-```
-\q
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/b784a602-1fa9-4935-8af8-cdaa105fdb8e)
-
-
-• For the other user ;
-```
-sudo apt-get update -y
-```
-```
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
-```
-```
-wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
-```
-```
-sudo apt-get install postgresql postgresql-contrib -y
-```
-```
-sudo systemctl enable postgresql
-```
-```
-sudo systemctl start postgresql
-```
-```
-sudo systemctl status postgresql
-```
-```
-sudo  passwd postgres
-```
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/8272efe1-694b-4946-848c-691843d64db9)
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/d9b9f933-6539-4465-994c-f9baf8a2f0b5)
-
-```
-su - postgres
-```
-```
-create user sonarqube
-```
-```
-psql
-```
-```
-ALTER USER sonar WITH ENCRYPTED password 'sonar';
-```
-```
-CREATE DATABASE sonarqube OWNER sonar;
-```
-```
-GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;
-```
-```
-\q
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/b784a602-1fa9-4935-8af8-cdaa105fdb8e)
-
-
-
-## Let's begin the installation of SonarQube's Community Edition version on our operating system.
-
-
-## İşletim sistemimize SonarQube'ın Community Edition sürümünü kurmaya başlayalım. 
-
-
-### 1-) Kurulumdan önce işletim sistemimizin paketlerini güncellemek için aşağıdaki komutları çalıştırıyoruz.
-
-
-### 1-) We run the following commands to update our operating system's packages before installation.
-
-
-• For the root user ;
-```
- apt-get update 
-```
-• For the other user ;
-```
- sudo apt-get update
-```
-• For the root user ;
-```
- apt-get upgrade
-```
-• For the other user ;
-```
- sudo apt-get upgrade
-```
-
-
-### 2-) Please execute the following command for Java installation.
-
-
-### 2-) Java kurulumu için aşağıdaki komutu çalıştırın.
-
-
-• For the root user ;
-```
- apt-get install openjdk-17-jdk -y
-```
-```
- apt-get install openjdk-17-jre -y
-```
-```
- update-alternatives --config java
-```
-```
- 1
-```
-```
- vim /etc/environment
-```
-```
- JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-```
-• For the other user ;
-```
- sudo apt-get install openjdk-17-jdk -y
-```
-```
- sudo apt-get install openjdk-17-jre -y
-```
-```
- sudo update-alternatives --config java
-```
-```
- 1
-```
-```
- sudo vim /etc/environment
-```
-```
- JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-```
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/62e84804-1e8e-4efc-8189-79c0269707df)
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/ec073f71-f837-4bbf-8b01-44cc7375b2ea)
-
-
-
-### 3-) Let's create a user for SonarQube.
-
-
-### 3-) SonarQube için bir kullanıcı oluşturalım.
-
-
-• For the root user ;
-```
- groupadd sonar
-```
-```
- useradd -c "user to run SonarQube" -d /opt/sonarqube-9.9.0.65466 -g sonar sonar
-```
-```
- chown sonar:sonar /opt/sonarqube-9.9.0.65466 -R
-```
-• For the other user ;
-```
- sudo groupadd sonar
-```
-```
- sudo useradd -c "user to run SonarQube" -d /sonarqube-9.9.0.65466 -g sonar sonar
-```
-```
- sudo chown sonar:sonar /opt/sonarqube-9.9.0.65466 -R
-```
-
-
-• Plugin ; 
-
-```
- cd /opt/sonarqube-9.9.0.65466/extensions/plugins
-```
-```
- wget https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/1.14.0/sonarqube-community-branch-plugin-1.14.0.jar
-```
-
-
-• SonarQube configuration ; 
-
-
-```
-vim /opt/sonarqube-9.9.0.65466/conf/sonar.properties
-```
-
-
-```
-sonar.jdbc.username=sonar
-sonar.jdbc.password=sonar
-sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
-```
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/de4c3cfc-eb54-46e8-a17d-cf69b2e6e7c6)
-
-
-```
-vim /opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh
-```
-
-
-
-### 4-) Create a systemd service file to run SonarQube as a system service.
-
-
-### 4-) SonarQube'u sistem servisi olarak çalıştırmak için bir systemd servisi dosyası oluşturalım.
-
-
-• For the root user ;
-```
- vim /etc/systemd/system/sonarqube.service
-```
-• For the other user ;
-```
- sudo vim /etc/systemd/system/sonar.service
-```
-
-
-```
-
-[Unit]
-Description=SonarQube service
-After=syslog.target network.target
-
-[Service]
-Type=forking
-
-ExecStart=/opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh start
-ExecStop=/opt/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh stop
-
-User=sonar
-Group=sonar
-Restart=always
-
-LimitNOFILE=65536
-LimitNPROC=4096
-
-[Install]
-WantedBy=multi-user.target
-
-
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/48386658-158c-4f61-a129-368785854d97)
-
-
-
-```
-wq!
-```
-
-
-### 5-) Let's grant the necessary permissions through the firewall.
-
-
-### 5-) Güvenlik duvarı üzerinden gerekli izinleri verelim.
-
-
-• For the root user ;
-```
- ufw allow http
-```
-```
- ufw allow https
-```
-```
- ufw allow 9000
-```
-• For the other user ;
-```
- sudo ufw allow http
-```
-```
- sudo ufw allow https
-```
-```
- sudo ufw allow 9000
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/b777b1e0-4fa5-433a-b9f1-9b5faf7faf14)
-
-
-
-### 6-) Let's enable and start the services.
-
-
-### 6-) Servisi etkinleştirip ve başlatalım.
-
-
-• For the root user ;
-```
- systemctl enable sonar
-```
-```
- systemctl start sonar
-```
-• For the other user ;
-```
- sudo systemctl enable sonar
-```
-```
- sudo systemctl start sonar
-```
-
-
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/a4ff04f3-e985-4989-8ec4-a85eabe43a09)
 
 
 
