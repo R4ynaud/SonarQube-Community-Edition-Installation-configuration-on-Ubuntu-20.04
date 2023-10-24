@@ -473,7 +473,7 @@ vim /etc/systemd/system/sonar.service
 ```
 
 ```
-Unit]
+[Unit]
 Description=SonarQube service
 After=syslog.target network.target
 
