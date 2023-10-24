@@ -102,36 +102,66 @@ ulimit -u 8192
 ``` 
 
 
+## To permanently increase vm.max_map_count, file descriptors, and ulimit, open the configuration file below and add the following value as shown below.
 
 
+## Vm.max_map_count çekirdeğini, dosya tanımlayıcısını ve ulimit'i kalıcı olarak artırmak için. Aşağıdaki yapılandırma dosyasını açın ve aşağıdaki değeri aşağıda gösterildiği gibi ekleyin.
 
 
-## SonarQube kurulumuna geçmeden önce PostgreSQL veritabanını kurmamız gerekiyor,  PostgreSQL veritabanını kurmak için aşağıdaki komutları sırayla çalıştırın.
-
-
-## Before proceeding with the SonarQube installation, we need to install the PostgreSQL database. To install the PostgreSQL database, execute the following commands in sequence.
-
-```
-sysctl -w vm.max_map_count=262144
-```
-```
-sysctl -w fs.file-max=65536
-```
-```
-ulimit -n 65536
-```
-```
-ulimit -u 4096
-```
 ```
 vim /etc/security/limits.conf
 ```
+```
+sonarqube   -   nofile   65536
+sonarqube   -   nproc    4096
+```
+```
+:wq!
+```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/5c4cf2b7-acd2-4ca9-9a88-b64c36985ade)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/ef86034a-6020-4df6-ac9f-6cb5fa66b783)
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-20.04/assets/93924485/7708f02a-5e5c-41d0-847a-6e05d2892536)
+## Before installing, Lets update and upgrade System Packages.
+
+
+## Kurulumdan önce Sistem Paketlerini güncelleyelim.
+
+
+```
+apt-get update
+```
+
+```
+apt-get upgrade
+```
+
+
+## Install wget and unzip package.
+
+
+## Wget'i yükleyin ve paketi çıkartın.
+
+
+```
+apt-get install wget unzip -y
+```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/67ebdb4b-5855-4687-87e5-de0fcdd62f22)
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------////////////////////////
+
+
 
 
 • For the root user ;
