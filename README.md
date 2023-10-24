@@ -374,6 +374,9 @@ vim /opt/sonarqube/sonarqube-9.9.0.65466/conf/sonar.properties
 sonar.jdbc.username=sonar 
 sonar.jdbc.password=1
 sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
+sonar.log.level=INFO
+sonar.path.logs=logs
+
 ```
 
 
