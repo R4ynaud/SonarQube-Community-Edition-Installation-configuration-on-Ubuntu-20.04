@@ -497,7 +497,8 @@ WantedBy=multi-user.target
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/dc1704fd-e323-4748-9f3d-30f962656978)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/c2694fed-edee-4781-9764-51cc9c700283)
+
 
 
 ## Start the SonarQube service by running the following commands.
