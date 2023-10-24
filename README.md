@@ -324,6 +324,59 @@ mv /opt/sonarqube-9.9.0.65466 /opt/sonarqube
 
 
 
+## Follow the steps below to configure SonarQube on our Ubuntu 22.04 operating system.
+
+
+## Ubuntu 22.04 işletim sistemimizde SonarQube'u yapılandırmak için aşağıdaki adımları izleyin.
+
+
+```
+groupadd sonar
+```
+```
+useradd -c "user to run SonarQube" -d /opt/sonarqube/sonarqube-9.9.0.65466 -g sonar sonar 
+```
+```
+chown sonar:sonar /opt/sonarqube/sonarqube-9.9.0.65466 -R
+```
+
+
+## Open the SonarQube configuration file using Vim.
+
+
+## Vim'i kullanarak SonarQube yapılandırma dosyasını açın.
+
+
+```
+vim /opt/sonarqube/sonarqube-9.9.0.65466/conf/sonar.properties
+```
+
+
+## Find the following lines.
+
+
+## Aşağıdaki satırları bulun.
+
+
+```
+#sonar.jdbc.username=
+#sonar.jdbc.password=
+```
+
+
+## Uncomment and Type the PostgreSQL Database username and password which we have created in above steps and add the postgres connection string.
+
+
+## Yukarıdaki adımlarda oluşturduğumuz PostgreSQL veritabanı kullanıcı adını ve şifresini yazın ve Postgres bağlantı dizesini ekleyin.
+
+
+```
+sonar.jdbc.username=sonar 
+sonar.jdbc.password=1
+sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube/sonarqube-9.9.0.65466
+```
+
+
 
 
 
