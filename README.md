@@ -377,6 +377,29 @@ sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube/sonarqube-9.9.0.65466
 ```
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/eab71f29-8469-4f1a-964f-09a24c9e321e)
+
+
+## Edit the sonar script file and set RUN_AS_USER.
+
+
+## Sonar komut dosyası dosyasını düzenleyin ve RUN_AS_USER'ı ayarlayın.
+
+
+```
+vim /opt/sonarqube/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh
+
+```
+
+```
+ RUN_AS_USER="sonar"
+```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/90537599-5eb3-4076-b363-b797dbbb17bd)
+
+
+
+
 
 
 
