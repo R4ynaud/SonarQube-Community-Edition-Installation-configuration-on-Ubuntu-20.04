@@ -373,11 +373,12 @@ vim /opt/sonarqube/sonarqube-9.9.0.65466/conf/sonar.properties
 ```
 sonar.jdbc.username=sonar 
 sonar.jdbc.password=1
-sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube/sonarqube-9.9.0.65466
+sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
 ```
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/eab71f29-8469-4f1a-964f-09a24c9e321e)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/aa6a3a95-1c99-448f-ab49-a8fd0f4ce2f2)
+
 
 
 ## Edit the sonar script file and set RUN_AS_USER.
@@ -398,6 +399,101 @@ vim /opt/sonarqube/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/90537599-5eb3-4076-b363-b797dbbb17bd)
 
 
+## Now to start SonarQube we need to do following: Switch to sonar user
+
+
+## Şimdi SonarQube'u başlatmak için aşağıdakileri yapmamız gerekiyor: Sonar kullanıcısına geçiş yapın
+
+
+```
+sudo su sonar
+
+```
+
+```
+ cd /opt/sonarqube/sonarqube-9.9.0.65466/bin/linux-x86-64
+```
+
+```
+./sonar.sh start
+```
+```
+./sonar.sh status
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/c9927fc0-70db-4a26-8a3a-824df5a96e12)
+
+
+
+## To check sonarqube logs, navigate to /opt/sonarqube/sonarqube-9.9.0.65466/logs/sonar.log directory.
+
+
+## SonarQube loglarını kontrol etmek için /opt/sonarqube/sonarqube-9.9.0.65466/logs/sonar.log dizinine gidin
+
+
+```
+tail /opt/sonarqube/sonarqube-9.9.0.65466/logs/sonar.log
+
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/1cfb4f34-4ea1-4929-87ad-14d6093653be)
+
+
+## Configure Systemd service.
+
+
+## Systemd hizmetini yapılandırma.
+
+
+```
+cd /opt/sonarqube/sonarqube-9.9.0.65466/bin/linux-x86-64
+```
+
+```
+./sonar.sh stop
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/84b08532-9d92-476d-bac1-8ffe85c5598e)
+
+
+## Create a systemd service file for SonarQube to run as System Startup.
+
+
+## SonarQube'un Sistem Başlangıcı olarak çalışması için bir systemd servis dosyası oluşturun.
+
+
+```
+vim /etc/systemd/system/sonar.service
+```
+
+```
+Unit]
+Description=SonarQube service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+ExecStart=/opt/sonarqube/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube/sonarqube-9.9.0.65466/bin/linux-x86-64/sonar.sh stop
+
+User=sonar
+Group=sonar
+Restart=always
+
+LimitNOFILE=65536
+LimitNPROC=4096
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/dc1704fd-e323-4748-9f3d-30f962656978)
 
 
 
