@@ -496,6 +496,29 @@ WantedBy=multi-user.target
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/dc1704fd-e323-4748-9f3d-30f962656978)
 
 
+## Start the SonarQube service by running the following commands.
+
+
+## Aşağıdaki komutları çalıştırarak SonarQube servisini başlatın.
+
+
+```
+systemctl start sonar
+```
+```
+systemctl enable sonar
+```
+```
+systemctl status sonar
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/ba2140e6-0f62-4a66-b3f2-c8b05e6f87a1)
+
+
+
+
+
 
 
 
