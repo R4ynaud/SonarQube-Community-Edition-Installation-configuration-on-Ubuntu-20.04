@@ -531,6 +531,24 @@ systemctl status sonar
 --------------------------------------------------------////////////////////////
 
 
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/fa5117db-4782-4f1d-8e2f-fefc5db50457)
+
+
+
+
+# Nginx installation & configüration for SonarQube.
+
+
+# SonarQube için Nginx kurulumu ve yapılandırması.
+
+
+
+
+
+
+--------------------------------------------------------////////////////////////
+
+
 
 # Azure DevOps configuration
 
