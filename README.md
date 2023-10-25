@@ -577,7 +577,6 @@ systemctl status nginx
 
 ```
 apt autoremove nginx --purge
-
 ```
 
 
