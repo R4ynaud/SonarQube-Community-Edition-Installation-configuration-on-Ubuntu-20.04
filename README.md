@@ -532,6 +532,40 @@ systemctl status sonar
 
 
 
+# Azure DevOps configuration
+
+
+# Azure DevOps konfigürasyonu.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a84b7241-0918-43db-be55-bb9595d4f53e)
+
+
+## We are adding the SonarQube extension from the Marketplace.
+
+
+## Marketplace'den SonarQube eklentisini ekliyoruz.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/ed9bda2b-51db-479b-8aeb-7e9302855697)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/b0e31c06-dd5b-4a14-8123-8eb32f4f6484)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/7cc40f70-37e8-4192-b709-d5395015fd87)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a6dd6bd6-c99c-4b41-a8b9-eca76c0923a0)
+
+
+
+
+
+
+
+
+
 
 
 
