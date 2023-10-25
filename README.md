@@ -622,7 +622,7 @@ apt autoremove nginx --purge
 
 ## Marketplace'den SonarQube eklentisini ekliyoruz.
 
-## 1-)
+## Step 1
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/ed9bda2b-51db-479b-8aeb-7e9302855697)
 
 ## 2-)
