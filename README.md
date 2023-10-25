@@ -572,6 +572,25 @@ systemctl status nginx
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/123376a0-bcb1-4b95-9411-25a5aab0afe0)
 
 
+## To check Nginx, run the following command.
+
+
+## Nginx'i kontrol etmek için aşağıdaki komutu çalıştırın.
+
+
+```
+ curl -i 127.0.0.1
+```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a73a48e4-ccfa-4223-85ed-68f341400c68)
+
+
+
+
+
+
+
+
 ## Auto remove command !
 
 
