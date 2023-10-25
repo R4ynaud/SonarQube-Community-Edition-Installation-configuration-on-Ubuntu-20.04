@@ -572,8 +572,13 @@ systemctl status nginx
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/123376a0-bcb1-4b95-9411-25a5aab0afe0)
 
 
+## Auto remove command !
 
 
+```
+apt autoremove nginx --purge
+
+```
 
 
 
