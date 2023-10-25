@@ -573,7 +573,7 @@ systemctl status sonar
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/f38c9504-d60f-4226-8eb2-fe1eb7622151)
 
 
-## Task alanından " Add Task " butonuna tıklayarak " Search " alanundan ......... 
+## Task alanından " Add Task " butonuna tıklayarak " Search " alanından ......... 
 
 
 
