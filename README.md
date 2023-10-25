@@ -536,10 +536,45 @@ systemctl status sonar
 
 
 
-# Nginx installation & configüration for SonarQube.
+## Run the following commands to install Nginx.
 
 
-# SonarQube için Nginx kurulumu ve yapılandırması.
+## Nginx'i yüklemek için aşağıdaki komutları çalıştırın.
+
+
+```
+apt update
+```
+
+```
+apt install nginx
+```
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/b7f50e4c-757b-4f54-90d7-6a2b9d46d2de)
+
+```
+nginx -v
+
+```
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/fe7d87d1-4994-4d1e-8628-01a6d084bb27)
+
+```
+systemctl enable nginx
+```
+```
+systemctl start nginx
+```
+```
+systemctl status nginx
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/123376a0-bcb1-4b95-9411-25a5aab0afe0)
+
+
+
+
+
 
 
 
