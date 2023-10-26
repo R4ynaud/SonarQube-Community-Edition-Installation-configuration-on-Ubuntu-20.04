@@ -599,6 +599,52 @@ apt autoremove nginx --purge
 ```
 
 
+## To redirect Nginx to a custom domain, we need to create a 'DNS Zone' through the 'Azure Portal'.
+
+
+## Nginx'i özel bir etki alanına yönlendirmek için 'Azure Portal' aracılığıyla bir 'DNS Bölgesi' oluşturmamız gerekiyor.
+
+
+
+## Azure portalında 'Kaynaklar' sekmesine tıklayalım.
+
+
+## Let's click on the 'Resources' tab in the Azure portal.
+
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/3603c1b3-492e-4714-b08e-872d5bf73914)
+
+
+
+
+## Let's click on the 'DNS Zone' tab in the Marketplace.
+
+
+## Marketplace'te 'DNS Zone' sekmesine tıklayalım.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/cb10f60b-144e-4faa-a01c-55eed5c991a6)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/c9dca7b7-330b-4f44-8cb2-7ba22f1fcb85)
+
+
+## After clicking the 'Create' button, select the resource group where SonarQube & Nginx are installed from the 'Subscription' field, and finally click on the 'Review Create' tab.
+
+
+## 'Create' butonuna bastıktan sonra 'Subscription' alanından 'Resource Group' alanına SonarQube & Ngnix'in kurulu olduğu resource group'u seçip son olarak 'Review Create' sekmesine tıklıyoruz.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/04684081-fbbd-441b-a8b7-f4a2a651b8b5)
+
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/4ca5232c-51aa-4083-aa68-489289767f8e)
+
+
+
+
 
 
 
