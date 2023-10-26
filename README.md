@@ -636,7 +636,7 @@ apt autoremove nginx --purge
 ## 'Create' butonuna bastıktan sonra 'Subscription' alanından 'Resource Group' alanına SonarQube & Ngnix'in kurulu olduğu resource group'u seçip son olarak 'Review Create' sekmesine tıklıyoruz.
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/04684081-fbbd-441b-a8b7-f4a2a651b8b5)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/c965e81f-9096-4d5e-921b-df7ed8516516)
 
 
 
