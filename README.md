@@ -681,6 +681,52 @@ apt autoremove nginx --purge
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a6dd6bd6-c99c-4b41-a8b9-eca76c0923a0)
 
 
+## And We will generate a token for SonarQube.
+
+
+## Ve SonarQube için bir token üreteceğiz.
+
+
+
+SonarQube → Administrator → MyAccount → Security 
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/9606aa2e-1b1a-4358-aa1d-fe80728dd500)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/45075f33-d701-41fe-a215-07c8bac08d5a)
+
+
+## We will name the token to be used for Azure DevOps and click “Generate” button. We will use this token for Azure Devops soon so make sure you save this token. 
+
+
+## Azure DevOps için kullanılacak tokena isim vereceğiz ve “Oluştur” butonuna tıklayacağız. Bu belirteci yakında Azure Devops için kullanacağız, bu nedenle bu belirteci kaydettiğinizden emin olun.
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/850bf5b2-97a3-439a-90f0-8942029a7570)
+
+
+## Now we will configure Azure DevOps.
+
+
+## Şimdi Azure DevOps'u yapılandıracağız. 
+
+
+Project Settings → Service Connections → New service connection→ SonarQube 
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/9bd20d25-99e3-4fa3-bb68-4b974d69b055)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/05704a13-f528-4854-b8da-e17770f274ec)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/08f266ef-aa64-4f71-a99d-beea7d84cd6d)
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/5de9c820-bddb-40d8-a9f7-23d765ed490b)
+
+
 ## We are opening our .yml file to integrate SonarQube.
 
 
@@ -695,12 +741,13 @@ apt autoremove nginx --purge
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/f38c9504-d60f-4226-8eb2-fe1eb7622151)
 
 
-## Task alanından " Add Task " butonuna tıklayarak " Search " alanından ......... 
+## We add 'SonarQube' from the 'Search' field by clicking the 'Add Task' button in the Task field.
 
 
+## Task alanından " Add Task " butonuna tıklayarak " Search " alanından 'SonarQube' ekliyoruz.
 
 
-
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/30581413-653e-4bc6-9b4c-440ccc4edb60)
 
 
 
