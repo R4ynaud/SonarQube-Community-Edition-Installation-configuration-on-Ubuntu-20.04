@@ -525,12 +525,6 @@ systemctl status sonar
 
 
 
-
-
-
---------------------------------------------------------////////////////////////
-
-
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/fa5117db-4782-4f1d-8e2f-fefc5db50457)
 
 
@@ -644,16 +638,6 @@ apt autoremove nginx --purge
 
 
 
-
-
-
-
-
-
---------------------------------------------------------////////////////////////
-
-
-
 # Azure DevOps configuration
 
 
@@ -715,7 +699,7 @@ SonarQube → Administrator → MyAccount → Security
 Project Settings → Service Connections → New service connection→ SonarQube 
 
 
-![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/9bd20d25-99e3-4fa3-bb68-4b974d69b055)
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/5bfd99d4-8721-4438-b05c-baf4a451a970)
 
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/05704a13-f528-4854-b8da-e17770f274ec)
