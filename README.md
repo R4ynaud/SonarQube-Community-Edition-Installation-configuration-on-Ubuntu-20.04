@@ -696,6 +696,11 @@ systemctl restart nginx
 ```
 
 
+```
+YOUR_DOMAIN.xyz
+```
+
+
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/3501b4dc-24a7-4f1a-9700-10722aa220f1)
 
 
