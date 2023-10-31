@@ -637,7 +637,46 @@ systemctl status nginx
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a73a48e4-ccfa-4223-85ed-68f341400c68)
 
+*****************
 
+## You will need to create an Nginx configuration file for port forwarding. Create a new file named 'sonarqube.conf' under the '/etc/nginx/sites-available/' directory.
+
+
+## Port yönlendirmesi için bir Nginx konfigürasyon dosyası oluşturmanız gerekecektir, '/etc/nginx/sites-available/' dizini altında yeni bir 'sonarqube.conf' adında bir dosya oluşturuyoruz. 
+
+```
+ vim /etc/nginx/sites-available/sonarqube.conf
+```
+```
+ server {
+
+    listen 80;
+    server_name YOUR_DOMAIN.xyz;
+    access_log /var/log/nginx/sonar.access.log;
+    error_log /var/log/nginx/sonar.error.log;
+    proxy_buffers 16 64k;
+    proxy_buffer_size 128k;
+
+    location / {
+        proxy_pass http://localhost:9000;
+        proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+        proxy_redirect off;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/749482eb-93e1-4a3f-a1a1-4d03dd8e48b9)
+
+
+
+
+******************
 ## Auto remove command !
 
 
