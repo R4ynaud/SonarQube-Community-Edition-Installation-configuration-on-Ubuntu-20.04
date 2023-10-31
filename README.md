@@ -637,7 +637,7 @@ systemctl status nginx
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a73a48e4-ccfa-4223-85ed-68f341400c68)
 
-*****************
+
 
 ## You will need to create an Nginx configuration file for port forwarding. Create a new file named 'sonarqube.conf' under the '/etc/nginx/sites-available/' directory.
 
@@ -674,10 +674,33 @@ systemctl status nginx
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/749482eb-93e1-4a3f-a1a1-4d03dd8e48b9)
 
 
+## To activate the configuration file you created, use the following command.
 
 
-******************
-## Auto remove command !
+## Oluşturduğunuz konfigürasyon dosyasını aktif hale getirmek için aşağıdaki komutu çalıştırın.
+
+
+```
+ ln -s /etc/nginx/sites-available/port-forwarding /etc/nginx/sites-enabled/
+```
+
+
+## Next, run the following command to restart Nginx.
+
+
+## Ardından, Nginx'i yeniden başlatmak için aşağıdaki komutu çalıştırın.
+
+
+```
+systemctl restart nginx
+```
+
+
+![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/3501b4dc-24a7-4f1a-9700-10722aa220f1)
+
+
+
+## Auto remove command !!!
 
 
 ```
