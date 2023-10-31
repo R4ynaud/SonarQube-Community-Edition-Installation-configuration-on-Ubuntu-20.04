@@ -534,15 +534,59 @@ systemctl status sonar
 • Nginx, an open-source web server and reverse proxy server software. Nginx is used to create high-performance, fast, reliable, and scalable web servers. 
 
 
-### 1-) Web Server: Nginx serves as an HTTP server used to deliver websites. It receives requests from clients' browsers and serves the corresponding web pages or content.
+1-) Web Server: Nginx serves as an HTTP server used to deliver websites. It receives requests from clients' browsers and serves the corresponding web pages or content.
+
+
+2-) Reverse Proxy Server: Nginx can be used as a reverse proxy server that forwards incoming requests to other servers. It is particularly useful for load balancing, distributing incoming requests to multiple backend servers, which helps balance the load and improve the availability and performance of web applications.
+
+
+3-) SSL/TLS Server: Nginx supports SSL/TLS (HTTPS) protocols for secure communication. This enables websites to provide secure communication and protect user data.
+
+
+4-) Static Content Server: Nginx is efficient at serving static content (such as HTML, CSS, and JavaScript files), ensuring fast website loading times.
+
+
+5-) Virtual Host Support: Nginx provides support for virtual hosts, allowing multiple websites to be hosted on a single server. 
+
+
+6-) Rewrite and Redirection Rules: Nginx offers flexible options for managing URL rewriting and redirection rules, allowing websites to be configured for better SEO and user experience.
+
+
+7-) Extensive Customization: Nginx can be customized through various plugins and modules, making it adaptable to different use cases.
+
+
+• Nginx is commonly used for large websites, application servers, load balancing setups, CDNs (Content Delivery Networks), and secure web servers. Its performance, low resource usage, and reliability make it a preferred choice for many professionals and developers.
+
 
 
 ## Nginx Nedir ? Ne İşe Yarar ?
 
 
-•
+• Nginx (söylenişi "engine-x" veya "nginx"), açık kaynaklı bir web sunucusu ve ters proxy sunucusu yazılımıdır. Nginx, performansı yüksek, hızlı, güvenilir ve ölçeklenebilir web sunucuları oluşturmak için kullanılan bir yazılımdır.
 
 
+1-) Web Sunucusu: Nginx, web sitelerini sunmak için kullanılan bir HTTP sunucusu olarak görev yapar. İstemcilerin tarayıcılarından gelen istekleri alır, bu isteklere karşılık gelen web sayfalarını veya içerikleri sunar.
+
+
+2-) Ters Proxy Sunucusu: Nginx, gelen istekleri başka sunuculara iletebilen bir ters proxy sunucusu olarak kullanılabilir. Özellikle yük dengeleme (load balancing) için kullanılan Nginx, gelen istekleri birden fazla arka plan sunucusuna dağıtarak yükü dengeler. Bu, web uygulamalarının daha yüksek kullanılabilirlik ve performansa sahip olmasına yardımcı olur.
+
+
+3-) SSL/TLS Sunucusu: Nginx, güvenli iletişim için SSL/TLS (HTTPS) protokollerini destekler. Bu sayede web siteleri güvenli iletişim sağlayabilir ve kullanıcı verilerini koruyabilir. 
+
+
+4-) Statik İçerik Sunucusu: Nginx, statik içerik (örneğin HTML, CSS, JavaScript dosyaları) sunmak için verimli bir şekilde kullanılır. Bu sayede web siteleri hızlı bir şekilde yüklenir.
+
+
+5-) Sanal Ana Bilgisayar (Virtual Host) Desteği: Nginx, tek bir sunucu üzerinde birden fazla web sitesini barındırmak için sanal ana bilgisayar (virtual host) desteği sağlar.
+
+
+6-) Rewrite ve Yönlendirme Kuralları: Nginx, URL yeniden yazma ve yönlendirme kurallarını yönetmek için esnek seçenekler sunar, bu da web sitelerinin daha iyi SEO ve kullanıcı deneyimi için yapılandırılmasını sağlar. 
+
+
+7-) Geniş Özelleştirme: Nginx, çeşitli eklentiler ve modüller aracılığıyla özelleştirilebilir. Bu, farklı kullanım senaryolarına uygun hale getirilmesini sağlar. 
+
+
+• Nginx, özellikle büyük web siteleri, uygulama sunucuları, yük dengeleme yapıları, CDN (içerik dağıtım ağı) ve güvenli web sunucuları oluşturmak için yaygın bir şekilde kullanılır. Performansı, düşük kaynak tüketimi ve güvenilirliği nedeniyle birçok profesyonel ve geliştirici tarafından tercih edilir.
 
 
 ## Run the following commands to install Nginx.
