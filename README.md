@@ -528,6 +528,21 @@ systemctl status sonar
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/fa5117db-4782-4f1d-8e2f-fefc5db50457)
 
 
+## What Is An Nginx ? 
+
+
+• Nginx, an open-source web server and reverse proxy server software. Nginx is used to create high-performance, fast, reliable, and scalable web servers. 
+
+
+### 1-) Web Server: Nginx serves as an HTTP server used to deliver websites. It receives requests from clients' browsers and serves the corresponding web pages or content.
+
+
+## Nginx Nedir ? Ne İşe Yarar ?
+
+
+•
+
+
 
 
 ## Run the following commands to install Nginx.
@@ -577,12 +592,6 @@ systemctl status nginx
 ```
 
 ![image](https://github.com/R4ynaud/SonarQube-Community-Edition-Installation-configuration-on-Ubuntu-22.04/assets/93924485/a73a48e4-ccfa-4223-85ed-68f341400c68)
-
-
-
-
-
-
 
 
 ## Auto remove command !
